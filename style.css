@@ -1,0 +1,111 @@
+:root {
+    --border-radius: 1rem;
+    --margin: 1.5rem;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+}
+
+.card {
+    background-color: hsl(216, 50%, 16%);
+    box-shadow: 2rem;
+    border-radius: var(--border-radius);
+    width: 20rem;
+    padding: 1.5rem;
+}
+
+.firsth3 {
+    color: hsl(178, 100%, 50%);
+    display: inline-block;
+}
+
+.secondh3 {
+    display: inline-block;
+    margin-left: 6.4rem;
+}
+
+.inlineimage {
+    display: inline;
+}
+
+.white {
+    color: hsl(0, 0%, 100%);
+}
+
+h3 {
+    margin-left: 0.5rem;
+}
+
+hr {
+    color: hsl(215, 51%, 70%);
+    background-color: hsl(215, 51%, 70%);
+    height: 0.000px;
+    margin-bottom: 1rem;
+}
+
+.lightblue {
+    color: hsl(215, 51%, 70%);
+}
+
+.white:hover, image:hover {
+    color: hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+.firsth3, .secondh3 {
+    display: inline-flex;
+    align-items: center;
+}
+
+::selection {
+    color: hsl(178, 100%, 50%);
+    background-color: red;
+}
+
+.eyeimage {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  max-width: 300px;
+  border-radius: 20px;
+  overflow: hidden;
+
+  background-image: url('./images/image-equilibrium.jpg');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: normal;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.eye {
+    visibility: hidden;
+}
+
+.eyeimage:hover {
+    filter: brightness(0.7);
+    background-image: linear-gradient(rgba(0, 255, 255, 0.6), rgba(0, 255, 255, 0.6)), 
+    url(./images/image-equilibrium.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .eye {
+        visibility: visible;
+    }
+}
+.white .second {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
